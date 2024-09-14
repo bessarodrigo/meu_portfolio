@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Rodrigo Bessa</title>
     <style>
+        header h1 {
+            font-size: 1.5rem; /* Diminui o tamanho da fonte */
+            text-align: left;  /* Alinha o texto ao canto esquerdo */
+            font-weight: normal; /* Faz o texto ficar menos destacado */
+            margin: 0; /* Remove margens extras se necessário */
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -73,7 +80,7 @@
         h2 {
             font-size: 28px;
             font-weight: bold;
-            text-align: left;
+            text-align: left; /* Centraliza os títulos */
             position: relative;
         }
 
@@ -109,16 +116,23 @@
         .article {
             border: 1px solid #ddd;
             padding: 20px;
-            text-align: left; /* Alinha o texto à esquerda */
             background-color: #fff; /* Fundo branco para destacar os artigos */
             display: flex;
             flex-direction: column; /* Faz o layout em coluna */
             align-items: center; /* Centraliza o conteúdo horizontalmente */
         }
 
+        .article h3 {
+            text-align: center; /* Centraliza os títulos dos artigos */
+        }
+
         .article img {
             width: 100%;
             height: auto; /* Mantém a proporção da imagem */
+        }
+
+        .article p {
+            text-align: left; /* Alinha as descrições dos artigos à esquerda */
         }
 
         .button {
@@ -151,9 +165,18 @@
             background-color: #fff; /* Fundo branco para destacar os dashboards */
         }
 
+        .dashboard h3 {
+            margin-bottom: 15px; /* Espaço abaixo dos títulos dos dashboards */
+        }
+
+        .dashboard p {
+            text-align: left; /* Alinha as descrições dos dashboards à esquerda */
+        }
+
         .dashboard iframe {
             width: 100%;
             height: 200px;
+            border: none; /* Remove a borda padrão dos iframes */
         }
 
         /* Ajuste para visualização mobile */
@@ -206,40 +229,34 @@
     <h2>Meus artigos</h2>
     <div class="article-grid">
         <div class="article">
-            <p><strong>Mensuração de Resultados da Loja do Bahia</strong></p>
-            <img src="imagens/loja.png" alt="Loja Esquadrão">
+            <h3>Mensuração de Resultados da Loja do Bahia</h3>
+            <img src="imagens/loja.png" alt="Projeto de mensuração da Loja Esquadrão">
             <p>Projeto de mensuração de dados da Loja Esquadrão do Esporte Clube Bahia, utilizando Power BI para visualização, Python para ETL e PostgreSQL para integração dos dados.</p>
-            <a href="link-do-artigo.html" class="button">Veja artigo</a>
+            <a href="https://medium.com/@reisrodri/painel-de-an%C3%A1lise-para-gest%C3%A3o-de-vendas-no-esporte-clube-bahia-d666aa05f2a1" class="button" target="_blank" rel="noopener noreferrer">Veja artigo</a>
         </div>
         <div class="article">
-            <p><strong>Análise de Desempenho de Loja de Produtos Naturais</strong></p>
-            <img src="imagens/produtos_naturais.jpg" alt="Produtos Naturais">
-            <p>Artigo de análise de lojas de produtos naturais, utilizando Power BI, Python para o tratamento dos dados e PostgreSQL para o armazanamento dos dados.</p>
-            <a href="link-do-artigo.html" class="button">Veja artigo</a>
+            <h3>Análise de Desempenho de Loja de Produtos Naturais</h3>
+            <img src="imagens/produtos_naturais.jpg" alt="Análise de lojas de produtos naturais">
+            <p>Artigo de análise de lojas de produtos naturais, utilizando Power BI, Python para o tratamento dos dados e PostgreSQL para o armazenamento dos dados.</p>
+            <a href="https://medium.com/@reisrodri/an%C3%A1lise-de-desempenho-de-lojas-de-produtos-naturais-em-salvador-um-estudo-de-caso-8fe3e39e60c2" class="button" target="_blank" rel="noopener noreferrer">Veja artigo</a>
         </div>
         <div class="article">
-            <p><strong>Visualização de Dados Financeiros no Esporte Clube Bahia</strong></p>
-            <img src="imagens/financeiro_ecbahia.jpg" alt="Esporte Clube Bahia">
-            <p>Projeto de visualização de dados financeiros do Esporte Clube Bahia, utilizando Power BI para visualização, Python para ETL e PostgreSQL para a criação de um banco de dados.</p>
-            <a href="link-do-artigo.html" class="button">Veja artigo</a>
+            <h3>Visualização de Dados Financeiros no Esporte Clube Bahia</h3>
+            <img src="imagens/financeiro_ecbahia.jpg" alt="Visualização financeira do Esporte Clube Bahia">
+            <p>Exploração e visualização de dados financeiros do Esporte Clube Bahia usando Power BI, com processos de ETL realizados em Python e armazenamento de dados em PostgreSQL.</p>
+            <a href="https://medium.com/@reisrodri/an%C3%A1lise-financeira-do-esporte-clube-bahia-aplicando-a-metodologia-crisp-dm-com-python-postgresql-3275be6e375d" class="button" target="_blank" rel="noopener noreferrer">Veja artigo</a>
         </div>
         <div class="article">
-            <p><strong>Visualização de Dados Financeiros no Esporte Clube Bahia</strong></p>
-            <img src="imagens/financeiro_ecbahia.jpg" alt="Esporte Clube Bahia">
-            <p>Projeto de visualização de dados financeiros do Esporte Clube Bahia, utilizando Power BI para visualização, Python para ETL e PostgreSQL para a criação de um banco de dados.</p>
-            <a href="link-do-artigo.html" class="button">Veja artigo</a>
-        </div>
-        <div class="article">
-            <p><strong>Visualização de Dados Financeiros no Esporte Clube Bahia</strong></p>
-            <img src="imagens/financeiro_ecbahia.jpg" alt="Esporte Clube Bahia">
-            <p>Projeto de visualização de dados financeiros do Esporte Clube Bahia, utilizando Power BI para visualização, Python para ETL e PostgreSQL para a criação de um banco de dados.</p>
-            <a href="link-do-artigo.html" class="button">Veja artigo</a>
-        </div>
-        <div class="article">
-            <p><strong>Visualização de Dados Financeiros no Esporte Clube Bahia</strong></p>
-            <img src="imagens/financeiro_ecbahia.jpg" alt="Esporte Clube Bahia">
-            <p>Projeto de visualização de dados financeiros do Esporte Clube Bahia, utilizando Power BI para visualização, Python para ETL e PostgreSQL para a criação de um banco de dados.</p>
-            <a href="link-do-artigo.html" class="button">Veja artigo</a>
+            <h3>Análise de Diminuição de Turnover dos Colaboradores</h3>
+            <img src="imagens/turnover.png" alt="Análise de turnover de colaboradores">
+            <p>Projeto de análise de dados com Power BI, Excel e técnicas estatísticas para identificar quais fatores mais influenciam no turnover dos colaboradores de uma empresa.</p>
+            <a href="https://medium.com/@reisrodri/diminui%C3%A7%C3%A3o-de-turnover-de-colaboradores-d196f7b5a00c" class="button" target="_blank" rel="noopener noreferrer">Veja artigo</a>
+        </div>  
+        <div class="article">      
+            <h3>Cálculo da Sinistralidade em Empresa de Telemedicina</h3>
+            <img src="imagens/sinistralidade.png" alt="Cálculo da sinistralidade em empresa de telemedicina">
+            <p>Artigo que apresenta o cálculo da sinistralidade em uma empresa de telemedicina por meio da utilização de Python para a construção de gráficos e tabelas.</p>
+            <a href="https://medium.com/@reisrodri/an%C3%A1lise-de-sinistralidade-em-uma-empresa-de-telemedicina-com-crisp-dm-8e731fe009b2" class="button" target="_blank" rel="noopener noreferrer">Veja artigo</a>
         </div>
     </div>
 </section>
@@ -247,25 +264,30 @@
 <div class="divider"></div>
 
 <section class="dashboards-section">
-    <h2>Meus dashboards</h2>
+    <h2>Meus Dashboards</h2>
     <div class="dashboard-grid">
         <div class="dashboard">
-            <p><strong>Loja de Produtos Naturais</strong></p>
-            <iframe src="dashboard1-link-embedded" frameborder="0"></iframe>
-            <a href="link-do-dashboard1.html" class="button">Veja dashboard</a>
+            <h3>Dashboard de Performance de Loja</h3>
+            <p>Dashboard que analisa o desempenho das lojas, destacando indicadores chave e métricas de sucesso.</p>
+            <iframe src="https://app.powerbi.com/view?r=123abc" frameborder="0"></iframe>
+            <a href="https://app.powerbi.com/view?r=123abc" class="button" target="_blank" rel="noopener noreferrer">Ver Dashboard</a>
         </div>
         <div class="dashboard">
-            <p><strong>Loja de Produtos Naturais</strong></p>
-            <iframe src="dashboard1-link-embedded" frameborder="0"></iframe>
-            <a href="link-do-dashboard1.html" class="button">Veja dashboard</a>
+            <h3>Dashboard de Vendas de Produtos Naturais</h3>
+            <p>Visualização das vendas de produtos naturais com análise detalhada de desempenho e tendências.</p>
+            <iframe src="https://app.powerbi.com/view?r=456def" frameborder="0"></iframe>
+            <a href="https://app.powerbi.com/view?r=456def" class="button" target="_blank" rel="noopener noreferrer">Ver Dashboard</a>
         </div>
         <div class="dashboard">
-            <p><strong>Loja de Produtos Naturais</strong></p>
-            <iframe src="dashboard1-link-embedded" frameborder="0"></iframe>
-            <a href="link-do-dashboard1.html" class="button">Veja dashboard</a>
+            <h3>Dashboard Financeiro do Esporte Clube Bahia</h3>
+            <p>Análise financeira do Esporte Clube Bahia, incluindo métricas de desempenho e relatórios detalhados.</p>
+            <iframe src="https://app.powerbi.com/view?r=789ghi" frameborder="0"></iframe>
+            <a href="https://app.powerbi.com/view?r=789ghi" class="button" target="_blank" rel="noopener noreferrer">Ver Dashboard</a>
         </div>
     </div>
 </section>
+
+<div class="divider"></div>
 
 </body>
 </html>
